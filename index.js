@@ -14,20 +14,17 @@ module.exports = function (target, options) {
 
   options = options || {};
   options.count = options.count || 10;
-  options.deadline = options.deadline || 10;
-  if (typeof options.adaptiveMode !== 'boolean') {
-    options.adaptiveMode = true;
+  options.deadline = options.deadline || options.count;
+  if (typeof options.pingInterval !== 'number') {
+    options.pingInterval = 0.9;
   }
 
   if (os.platform() == "win32") {
     var spawn = child.spawn("ping", ["-n", options.count, target]);
   } else if (os.platform() == 'linux') {
-    var cmdLineArgsArray = ["-c", options.count, "-w", options.deadline, target];
-    // Adds Adaptive Mode "-A" flag to the command line ping arguments
-    if (options.adaptiveMode === true) {
-      cmdLineArgsArray.unshift('-A');
-    }
-
+    // N.B. Spaces out pings to 0.9 seconds (default), and waits for the full ping emission-
+    // response roundtrip
+    var cmdLineArgsArray = ["-c", options.count, "-w", options.deadline, "-f", "-i", options.pingInterval, target];
     var spawn = child.spawn("ping", cmdLineArgsArray);
   } else {
     var spawn = child.spawn("ping", ["-c", options.count, "-w", options.deadline, target]);
