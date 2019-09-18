@@ -88,7 +88,7 @@ module.exports = function (target, options) {
   function data(str) {
     str = str + "";
     var lines = str.split("\n");
-    if (lines.length > 1) {
+    if (lines.length > 0) {
       lines.forEach(line);
     } else {
       line(data);
