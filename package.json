@@ -1,44 +1,6 @@
 {
   "name": "ping-wrapper2",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Native wrapper for ping",
-  "homepage": "https://github.com/sebmck/ping-wrapper",
-  "author": {
-    "name": "Sebastian McKenzie",
-    "email": "sebmck@gmail.com"
-  },
-  "keywords": [
-    "ping"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sebmck/ping-wrapper.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sebmck/ping-wrapper/issues"
-  },
-  "gitHead": "c3d6f6059b24a15b3b7f4a9b35d17400546745b3",
-  "_id": "ping-wrapper2@0.0.6",
-  "scripts": {},
-  "_shasum": "f01f48b5abac50798a5f5e5f563bf6d24924263f",
-  "_from": "ping-wrapper2@0.0.6",
-  "_npmVersion": "3.3.10",
-  "_nodeVersion": "4.1.0",
-  "_npmUser": {
-    "name": "sebmck",
-    "email": "sebmck@gmail.com"
-  },
-  "dist": {
-    "shasum": "f01f48b5abac50798a5f5e5f563bf6d24924263f",
-    "tarball": "https://registry.npmjs.org/ping-wrapper2/-/ping-wrapper2-0.0.6.tgz"
-  },
-  "maintainers": [
-    {
-      "name": "sebmck",
-      "email": "sebmck@gmail.com"
-    }
-  ],
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/ping-wrapper2/-/ping-wrapper2-0.0.6.tgz",
-  "readme": "ERROR: No README data found!"
+  "license": "MIT"
 }
