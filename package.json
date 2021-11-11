@@ -1,6 +1,6 @@
 {
-  "name": "ping-wrapper2",
-  "version": "0.0.7",
+  "name": "@k4connect/ping-wrapper2",
+  "version": "0.0.8",
   "description": "Native wrapper for ping",
   "license": "MIT"
 }
